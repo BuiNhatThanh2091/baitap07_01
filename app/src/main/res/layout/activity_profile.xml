@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#F44336">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hồ sơ cá nhân"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:id="@+id/imgAvatar"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:src="@drawable/ic_launcher_background"
+                android:scaleType="centerCrop"
+                android:layout_marginBottom="32dp" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="1"> <TableRow android:layout_marginBottom="16dp">
+                <TextView
+                    android:text="Mã ID"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:layout_width="140dp"/> <TextView
+                android:id="@+id/tvId"
+                android:text="3"
+                android:textColor="#333333"
+                android:textSize="16sp"/>
+            </TableRow>
+
+                <TableRow android:layout_marginBottom="16dp">
+                    <TextView
+                        android:text="Tên đăng nhập"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:textSize="16sp"/>
+                    <TextView
+                        android:id="@+id/tvUsername"
+                        android:text="trung1"
+                        android:textColor="#333333"
+                        android:textSize="16sp"/>
+                </TableRow>
+
+                <TableRow android:layout_marginBottom="16dp">
+                    <TextView
+                        android:text="Họ tên"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:textSize="16sp"/>
+                    <TextView
+                        android:id="@+id/tvFullName"
+                        android:text="Nguyen Huu Trung"
+                        android:textColor="#333333"
+                        android:textSize="16sp"/>
+                </TableRow>
+
+                <TableRow android:layout_marginBottom="16dp">
+                    <TextView
+                        android:text="Email"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:textSize="16sp"/>
+                    <TextView
+                        android:id="@+id/tvEmail"
+                        android:text="trung2@gmail.com"
+                        android:textColor="#333333"
+                        android:textSize="16sp"/>
+                </TableRow>
+
+                <TableRow android:layout_marginBottom="16dp">
+                    <TextView
+                        android:text="Giới tính"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:textSize="16sp"/>
+                    <TextView
+                        android:id="@+id/tvGender"
+                        android:text="Male"
+                        android:textColor="#333333"
+                        android:textSize="16sp"/>
+                </TableRow>
+            </TableLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="ĐĂNG XUẤT"
+        android:backgroundTint="#F44336"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_margin="16dp"/>
+
+</LinearLayout>
